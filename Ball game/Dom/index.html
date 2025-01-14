@@ -1,0 +1,60 @@
+<html>
+<body>
+  <div>Users:</div>
+  <ul>
+    <li>John</li>
+    <li>Pete</li>
+  </ul>
+  <table id="table">
+    <tr id="line">
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+    <tr id="line">
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+    <tr id="line">
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+    <tr id="line">
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+  </table>
+  
+</body>
+<script>
+    function makeUser() {
+  return {
+    name: "John",
+    ref() {
+      return this;
+    }
+  };
+}
+
+let user = makeUser();
+
+alert( user.ref().name ); // John
+    let td = table.rows[0].cells[0];
+    let td2 = table.rows[1].cells[1];
+    let td3 = table.rows[2].cells[2];
+    let td4 = table.rows[3].cells[3];
+    td2.style.backgroundColor = "red";
+    td3.style.backgroundColor = "red";
+    td4.style.backgroundColor = "red";
+    td.style.backgroundColor = "red";
+    table.style.border = "2px solid black";
+    table.line.td.style.border = "2px solid black";
+  </script>
+</html>
